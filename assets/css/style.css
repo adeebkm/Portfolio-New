@@ -290,3 +290,15 @@ body {
   height: 100%;
   z-index: 9999;
 }
+
+.delayMediumReveal, .typewriter , .logo{
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in-out 1 forwards;
+  animation-delay: 1s; /* Adjust the delay as needed (2 seconds in this case) */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

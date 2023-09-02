@@ -275,3 +275,10 @@ body {
   transition: opacity 1s ease-in-out; /* You can adjust the duration and easing as needed */
 }
 /*# sourceMappingURL=style.css.map */
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}

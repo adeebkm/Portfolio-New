@@ -107,3 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 100); // You can adjust the delay (in milliseconds) as needed
 });
 
+
+$(window).load(function() {
+  $("body").removeClass("preload");
+});

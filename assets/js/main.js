@@ -107,4 +107,19 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 100); // You can adjust the delay (in milliseconds) as needed
 });
 
+const audio = document.getElementById("audio");
+const evangaImage = document.getElementById("logo");
+let isPlaying = false;
 
+evangaImage.addEventListener("click", () => {
+  if (isPlaying) {
+    audio.pause();
+    isPlaying = false;
+  } else {
+    audio.play().catch(error => {
+      // Handle any errors here if autoplay is blocked
+      console.error(error);
+    });
+    isPlaying = true;
+  }
+});

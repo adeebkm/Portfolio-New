@@ -276,9 +276,17 @@ body {
 }
 /*# sourceMappingURL=style.css.map */
 
-.preload * {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
+
+#s-home {
+  position: relative;
+  z-index: 1;
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
 }

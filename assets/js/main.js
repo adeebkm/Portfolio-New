@@ -39,10 +39,19 @@ hoverChangeExperience(
 
 hoverChangeExperience(
   ".contweb",
-  `As Director of Business Development at Sigma Distributors since August 2023, I am instrumental in fostering strategic partnerships and expanding our distribution network. Leveraging our key supplier relationships with industry giants like Nestlé, Tata Tea, and Kaff, I drive growth by connecting high-quality products to retail stores, ensuring seamless supply chain operations.`,
-  "Director of Business Development",
-  "Sigma Distributors",
-  "Aug 2023 - Present"
+  `Worked on advancing airspace management and contributed to the development of state-of-the-art UAV algorithms. Addressed the complexities of integrating traditional air traffic management with emerging demands, while navigating unpredictable weather patterns and auxiliary mobility systems. Led efforts in the development of collaborative decision-making protocols, from identifying flight situations to evaluating scenarios and implementing forward-looking corrective measures.`,
+  "Research Intern",
+  "Indian Institute of Science",
+  "Oct 2023 - Present"
+);
+
+hoverChangeExperience(
+  ".journyzz",
+  `I served as the dedicated app developer for Journyz, focusing exclusively on React Native development. This specialization played a pivotal role in ensuring the accessibility and optimal performance of Journyz, making it an indispensable tool for efficient data management."
+`,
+  "Application Developer",
+  "Journyz",
+  "Jan 2023 - Apr 2023"
 );
 
 hoverChangeDescription(

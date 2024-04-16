@@ -4,15 +4,23 @@ import { typeWrite } from "./typeWrite.js";
 import { hoverChangeDescription } from "./hoverChangeDescription.js";
 import { menu } from "./menu.js";
 
-menu();
-initScrollReveal();
-typeWrite(document.querySelector(".typewriter"));
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const typewriterText = [
+        "Full Stack Developer",
+        "Data Analyst",
+        "Information Science Student at Ramaiah Institute of Technology"
+    ];
+    const typewriterElement = document.querySelector(".typewriter");
+    typeWrite(typewriterElement, typewriterText);
+});
+
 
 hoverChangeExperience(
   ".digitalhouse",
-  `Coordinated resource allocation and scheduling for diverse projects and events.
-  Orchestrated cross-functional collaboration between sales, marketing, and operations teams to optimize supply chain.
-  Maintained a clear communication channel and ensured timely delivery of necessary resources.`,
+  `As the Resource Operations Head at Under 25, I led a 30-member team in managing both technological and physical resources effectively. My role involved utilizing predictive analytics for accurate resource forecasting and conducting regression analysis to assess demand. This position enhanced my leadership skills and deepened my understanding of operational research in strategic resource management.
+  `,
   "Resource Operational Leader",
   "Under-25",
   "Dec 2022 - Mar 2023"
@@ -39,7 +47,8 @@ hoverChangeExperience(
 
 hoverChangeExperience(
   ".contweb",
-  `Worked on advancing airspace management and contributed to the development of state-of-the-art UAV algorithms. Addressed the complexities of integrating traditional air traffic management with emerging demands, while navigating unpredictable weather patterns and auxiliary mobility systems. Led efforts in the development of collaborative decision-making protocols, from identifying flight situations to evaluating scenarios and implementing forward-looking corrective measures.`,
+  `Contributed to the advancement of unmanned aerial vehicle technologies and airspace algorithms, focusing on optimizing urban air mobility. Integrated advanced pathfinding algorithms within air traffic management systems to mitigate collision risks, utilizing data on weather, terrain, and population density. Developed a Django and Docker-based web application to demonstrate 4D pathfinding for urban air mobility.
+  `,
   "Research Intern",
   "Indian Institute of Science",
   "Oct 2023 - Present"
@@ -47,7 +56,8 @@ hoverChangeExperience(
 
 hoverChangeExperience(
   ".journyzz",
-  `I served as the dedicated app developer for Journyz, focusing exclusively on React Native development. This specialization played a pivotal role in ensuring the accessibility and optimal performance of Journyz, making it an indispensable tool for efficient data management."
+  `As a Full-stack Intern at Journyz, I enhanced the digital platform's operational efficiency by designing and developing key mobile application features using React Native. My role involved troubleshooting, improving app functionalities, and iteratively refining the user experience based on feedback. Additionally, I utilized Figma to create detailed wireframes, further supporting the app’s development process.
+  
 `,
   "Application Developer",
   "Journyz",

@@ -8,9 +8,9 @@ import { menu } from "./menu.js";
 
 document.addEventListener("DOMContentLoaded", function () {
     const typewriterText = [
-        "Full Stack Developer",
-        "Data Analyst",
-        "Information Science Student at Ramaiah Institute of Technology"
+        "Pursuing Master's in Data Analytics Engineering at George Mason University",
+        "Data Analytics Engineer",
+        "Full Stack Developer"
     ];
     const typewriterElement = document.querySelector(".typewriter");
     typeWrite(typewriterElement, typewriterText);
@@ -31,7 +31,7 @@ hoverChangeExperience(
   `As a GDSC core member, I contributed to a Google Developers program for university students. The program focused on teaching mobile and web development skills, design thinking, and leadership. By leveraging GDSC, we aimed to enhance students' employability through valuable  development training.`,
   "GDSC-Core Member",
   "Google Developer Student Club Ramaiah Institute of Technology",
-  "April 2023 - Present"
+  "Apr 2023 - May 2024"
 );
 
 hoverChangeExperience(
@@ -42,7 +42,7 @@ hoverChangeExperience(
   marketing.`,
   "Lead",
   "ClutchRIT Esports",
-  "Mar 2022 - Present"
+  "Mar 2022 - May 2024"
 );
 
 hoverChangeExperience(
@@ -51,7 +51,7 @@ hoverChangeExperience(
   `,
   "Research Intern",
   "Indian Institute of Science",
-  "Oct 2023 - Present"
+  "Oct 2023 - Jun 2024"
 );
 
 hoverChangeExperience(
@@ -104,6 +104,7 @@ hoverChangeDescription(
   ".radix",
   "Radix is ​​a library that provides accessible, unstyled components for building React applications."
 );
+
 
 
 

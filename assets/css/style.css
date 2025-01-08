@@ -301,7 +301,7 @@ body {
 
 
 #home-container-text{
-  z-index: 9999;
+  z-index: 10;
 }
 
 
@@ -335,3 +335,53 @@ body {
 .centered-text a {
   margin: 0; /* Remove default margins */
 }
+
+#s-projects .grid-layout #projects .bidirectional {
+  border: 2px solid #986dff; /* Matches your primary color */
+}
+
+#s-projects .grid-layout #projects .bidirectional:hover {
+  border-color: #7a56d2; /* Slightly darker hover effect */
+  background-color: #1c1c1c; /* A subtle background change */
+}
+
+
+#s-projects .grid-layout #projects .compass-careers {
+  border: 2px solid #28a745; /* Green for this project */
+}
+
+#s-projects .grid-layout #projects .compass-careers:hover {
+  border-color: #218838; /* Darker hover green */
+  background-color: #1f2d1f; /* Subtle green tint on hover */
+}
+
+#instagram-button {
+  position: absolute; /* Independent positioning */
+  z-index: 999; /* Highest stacking level */
+  top: 62.5%; /* Replace this with the observed 'top' value */
+  left: 50%; /* Replace this with the observed 'left' value */
+  transform: translate(-50%, -50%); /* Adjust alignment to center */
+
+  text-decoration: none;
+  font-weight: bold;
+  pointer-events: auto; /* Ensure it's clickable */
+  background: #986dff;
+  color: #fff;
+  backdrop-filter: blur(10px);
+  padding: 20px 32px;
+  max-width: 250px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .4s ease;
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 400;
+
+}
+
+#instagram-button:hover {
+  background: #7a56d2; /* Optional hover effect */
+}
+

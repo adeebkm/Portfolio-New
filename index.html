@@ -433,7 +433,53 @@
       </div>
     </section>
 
-    <!-- Terminal Simulator Section -->
+    <!-- Skill Tree section -->
+    <section id="s-skill-tree">
+      <div class="container" id="skill-tree-container">
+        <h2 class="section-title">Skill Tree</h2>
+        <p class="section-description">
+          Explore how my skills connect and interact with each other across different domains.
+        </p>
+        
+        <div id="skill-tree-visualization"></div>
+        
+        <div class="skill-tree-legend">
+          <div class="legend-item all">
+            <div class="legend-color" style="background: linear-gradient(to right, #61dafb, #6b8e23, #9370db, #ffa500);"></div>
+            <span class="legend-label">All</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-color frontend"></div>
+            <span class="legend-label">Frontend</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-color backend"></div>
+            <span class="legend-label">Backend</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-color data"></div>
+            <span class="legend-label">Data</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-color tools"></div>
+            <span class="legend-label">Tools</span>
+          </div>
+        </div>
+        
+        <div id="skill-detail-panel">
+          <h3 id="skill-detail-title">Select a skill</h3>
+          <p id="skill-detail-description">
+            Click on any skill node to see details about it and how it connects to other skills.
+          </p>
+          <div id="skill-detail-connections"></div>
+        </div>
+      </div>
+      
+      <!-- Added spacer div to create separation between skill tree and terminal -->
+      <div class="section-spacer"></div>
+    </section>
+
+    <!-- Terminal section -->
     <section id="s-terminal">
       <div class="grid-layout">
         <h2 class="delaySmallReveal">Terminal <span>.</span></h2>
@@ -453,45 +499,8 @@
             </div>
             <div id="terminal-input-line">
               <span class="terminal-prompt">adeeb@portfolio:~$</span>
-              <input type="text" id="terminal-input" autofocus />
+              <input type="text" id="terminal-input" />
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skill Tree Visualization Section -->
-    <section id="s-skill-tree">
-      <div class="grid-layout">
-        <h2 class="delaySmallReveal">Skill Tree <span>.</span></h2>
-        <p class="skill-tree-intro">Explore how my skills connect and relate to each other in this interactive visualization.</p>
-        
-        <div id="skill-tree-container">
-          <div id="skill-tree-legend">
-            <div class="legend-item">
-              <span class="legend-color frontend"></span>
-              <span class="legend-label">Frontend</span>
-            </div>
-            <div class="legend-item">
-              <span class="legend-color backend"></span>
-              <span class="legend-label">Backend</span>
-            </div>
-            <div class="legend-item">
-              <span class="legend-color data"></span>
-              <span class="legend-label">Data</span>
-            </div>
-            <div class="legend-item">
-              <span class="legend-color tools"></span>
-              <span class="legend-label">Tools</span>
-            </div>
-          </div>
-          <div id="skill-tree-visualization">
-            <!-- This will be populated by D3.js -->
-          </div>
-          <div id="skill-detail-panel">
-            <h3 id="skill-detail-title">Select a skill</h3>
-            <p id="skill-detail-description">Click on any skill node to see details about it and how it connects to other skills.</p>
-            <div id="skill-detail-connections"></div>
           </div>
         </div>
       </div>
@@ -570,6 +579,17 @@
   <script type="module" src="assets/js/main.js"></script>
   <script src="assets/js/terminal.js"></script>
   <script src="assets/js/skillTree.js"></script>
+  
+  <!-- Ensure page starts at the top -->
+  <script>
+    // If page is loaded without a specific hash/fragment
+    if (window.location.hash === '') {
+      // Scroll to top on page load
+      window.onload = function() {
+        window.scrollTo(0, 0);
+      };
+    }
+  </script>
   
   <!-- Scroll to top button -->
   <button id="scroll-to-top" aria-label="Scroll to top">

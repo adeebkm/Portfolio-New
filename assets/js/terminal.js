@@ -10,11 +10,32 @@ document.addEventListener('DOMContentLoaded', function() {
   const terminalInput = document.getElementById('terminal-input');
   const terminalBody = document.getElementById('terminal-body');
 
-  // Focus the input when clicking anywhere in the terminal
+  // Prevent terminal from taking focus when scrolling to the section
+  // Only focus the terminal input when explicitly clicking on the terminal
   const terminalContainer = document.getElementById('terminal-container');
-  terminalContainer.addEventListener('click', function() {
-    terminalInput.focus();
-  });
+  if (terminalContainer) {
+    // Explicitly mark that the user clicked in the terminal
+    let userClickedTerminal = false;
+    
+    terminalContainer.addEventListener('click', function(e) {
+      // Prevent focus if clicking on a link inside terminal output
+      if (e.target.tagName.toLowerCase() === 'a') {
+        return;
+      }
+      
+      userClickedTerminal = true;
+      terminalInput.focus();
+    });
+    
+    // Prevent automatic focus when scrolling to the terminal section
+    terminalInput.addEventListener('focus', function(e) {
+      if (!userClickedTerminal) {
+        terminalInput.blur();
+      }
+      // Reset the flag after use
+      userClickedTerminal = false;
+    });
+  }
 
   // Terminal command history
   let commandHistory = [];

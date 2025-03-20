@@ -70,7 +70,7 @@ hoverChangeDescription(
 );
 hoverChangeDescription(
   ".css",
-  "CSS is a style sheet language made up of 'layers', created for the purpose of styling pages."
+  "CSS is a style sheet language made up of "layers", created for the purpose of styling pages."
 );
 hoverChangeDescription(
   ".js",
@@ -102,10 +102,10 @@ hoverChangeDescription(
 );
 hoverChangeDescription(
   ".radix",
-  "Radix is a library that provides accessible, unstyled components for building React applications."
+  "Radix is ​​a library that provides accessible, unstyled components for building React applications."
 );
 
-// AWS, Office, and Django descriptions
+// Add new skills descriptions for AWS and Microsoft Office
 hoverChangeDescription(
   ".aws",
   "Amazon Web Services (AWS) is a comprehensive cloud platform offering over 200 services for computing, storage, databases, networking, analytics, machine learning, and more, enabling businesses to scale and grow."
@@ -114,13 +114,11 @@ hoverChangeDescription(
   ".office",
   "Microsoft Office is a suite of productivity software including Word, Excel, PowerPoint, and other applications that provide essential tools for document creation, data analysis, and professional presentations."
 );
+
+// Other skills descriptions
 hoverChangeDescription(
   ".django",
-  "Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design with a model-template-view architectural pattern. It provides a secure, scalable way to build web applications quickly."
-);
-hoverChangeDescription(
-  ".sql",
-  "SQL (Structured Query Language) is a powerful domain-specific language for managing and querying relational database systems. It enables efficient data manipulation, retrieval, and management through standardized commands for creating schemas, inserting data, and performing complex queries across multiple tables."
+  "Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design with a model-template-view architectural pattern."
 );
 
 const checkbox = document.querySelector('.my-form input[type="checkbox"]');

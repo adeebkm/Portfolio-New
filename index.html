@@ -25,6 +25,16 @@
 </head>
 
 <body>
+  <!-- Loading animation -->
+  <div id="loading-screen">
+    <div class="loader">
+      <svg width="50" height="50" viewBox="0 0 50 50">
+        <circle cx="25" cy="25" r="20" fill="none" stroke="#986dff" stroke-width="4" stroke-dasharray="60 20" stroke-linecap="round">
+          <animateTransform attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="1.5s" repeatCount="indefinite" />
+        </circle>
+      </svg>
+    </div>
+  </div>
   
   <div id="content">
     <header>
@@ -48,6 +58,12 @@
               <a href="#s-skills">Knowledge</a>
             </li>
             <li>
+              <a href="#s-terminal">Terminal</a>
+            </li>
+            <li>
+              <a href="#s-skill-tree">Skill Tree</a>
+            </li>
+            <li>
               <a href="#s-contactme">Contact Me</a>
             </li>
           </ul>
@@ -59,6 +75,12 @@
   <main>
     <section id="s-home">
       <div id="particles-js"></div>
+      
+      <!-- Add floating shapes for visual interest -->
+      <div class="hero-shape hero-shape-1"></div>
+      <div class="hero-shape hero-shape-2"></div>
+      <div class="hero-shape hero-shape-3"></div>
+      
       <div class="grid-layout">
         <div id="home">
           <div id="home-container-text" class="centered-text">
@@ -97,7 +119,7 @@
             </h3>
 
             <p class="delayLargeReveal">
-              Hello! I’m Adeeb Khaja Mohamed, a graduate student pursuing an MS in Data Analytics Engineering at George Mason University. I recently completed my undergraduate degree in Information Science at Ramaiah Institute of Technology, where I built a strong foundation in software development and data analytics through impactful projects and hands-on experiences. During my internship at the Indian Institute of Science, I developed advanced algorithms for optimizing air traffic management systems, demonstrating my technical expertise in Python and Django. My projects span various domains, from enhancing digital platforms to creating innovative web solutions that improve user interactions, showcasing my ability to address complex challenges with tech-driven solutions. Alongside my academic and technical pursuits, I held leadership roles in technology-focused clubs, where I fostered innovation and collaboration, further honing my leadership and teamwork skills. Now, as I delve deeper into the field of data analytics, my goal is to leverage my academic knowledge, technical skills, and leadership experience to drive impactful solutions in technology and analytics, with the long-term vision of establishing my own tech enterprise to deliver meaningful innovations.
+              Hello! I'm Adeeb Khaja Mohamed, a graduate student pursuing an MS in Data Analytics Engineering at George Mason University. I recently completed my undergraduate degree in Information Science at Ramaiah Institute of Technology, where I built a strong foundation in software development and data analytics through impactful projects and hands-on experiences. During my internship at the Indian Institute of Science, I developed advanced algorithms for optimizing air traffic management systems, demonstrating my technical expertise in Python and Django. My projects span various domains, from enhancing digital platforms to creating innovative web solutions that improve user interactions, showcasing my ability to address complex challenges with tech-driven solutions. Alongside my academic and technical pursuits, I held leadership roles in technology-focused clubs, where I fostered innovation and collaboration, further honing my leadership and teamwork skills. Now, as I delve deeper into the field of data analytics, my goal is to leverage my academic knowledge, technical skills, and leadership experience to drive impactful solutions in technology and analytics, with the long-term vision of establishing my own tech enterprise to deliver meaningful innovations.
             </p>
             <nav class="delayLargeReveal">
               <ul>
@@ -166,115 +188,185 @@
 
     <section id="s-projects">
       <div class="grid-layout">
-        <h2 class="delaySmallReveal">Projects <span>.</span></h2>
-        <div id="projects">
-          <!-- Existing projects -->
-          <article class="intervalCardReveal teslabank">
-            <h3 class="project-heading">Bubble Bop - Food Dine In</h3>
-            <div class="project-description">
-              <p>
-                Bubble Bop emerged as a passionate endeavor during a hackathon, born from the vision to revolutionize
-                the dining experience. In a world where traditional dining often involves lengthy waits and cumbersome
-                ordering processes, Bubble Bop sought to reimagine it all. Our mission was clear: to design and develop
-                a comprehensive, full-stack web application that empowers users to seamlessly secure table reservations,
-                conveniently place orders, and effortlessly complete payments, all working harmoniously to optimize
-                restaurant efficiency and elevate overall customer satisfaction. With Bubble Bop, dining becomes a
-                chore-free journey, whether for an intimate date night or a casual meal with friends, offering
-                unparalleled convenience and efficiency from the moment you step through the restaurant's doors to the
-                final bite of your delicious meal. Our hackathon project embodied the potential to reshape the way we
-                dine, making every culinary experience a memorable one. Welcome to the future of food dine-in with
-                Bubble Bop.
-              </p>
-              <a href="https://github.com/adeebkm/Bubble-Bop-Food-Dine-In" rel="noopener" target="_blank" id="teslabank">View project</a>
-            </div>
-          </article>
-    
-          <article class="intervalCardReveal naped">
-            <h3 class="project-heading">DAIM - Decentralized AI and Data Marketplace</h3>
-            <div class="project-description">
-              <p>
-                DAIM emerged as a hackathon project, driven by a mission to combat the centralization of AI and data. In
-                a landscape dominated by a select few corporations, DAIM aimed to empower independent developers by
-                offering a platform that allowed them to monetize their innovations while preserving privacy. Our vision
-                for DAIM was to establish a decentralized ecosystem, uniting AI Service Publishers, Data or Model
-                Contributors, and AI Service Consumers for mutual benefit. During the hackathon, DAIM enabled AI Service
-                Publishers to submit datasets and models, which could be offered in private or public modes, sparking
-                discussions in threads addressing specific problem statements. A unique feature was that with each
-                consumer purchase, the value and price of datasets and models increased, benefiting creators and
-                consumers alike. Contributors, in the form of threads, worked to enhance existing AI services, competing
-                with original publishers and fellow contributors, with a validation process ensuring top-notch quality.
-                Consumers accessed a dynamic marketplace of AI services and data offerings, confident in their privacy
-                protection through secure computation methods. Every interaction within the hackathon project
-                contributed to the growth and value of the datasets and models available. DAIM, as a hackathon
-                initiative, embodied the potential to decentralize control, empower creators, and prioritize privacy in
-                the realm of artificial intelligence, representing the future of AI and data accessibility.
-              </p>
-              <a href="https://github.com/adeebkm/Decentralized-AI-and-Data-Marketplace" rel="noopener" target="_blank" id="naped">View project</a>
-            </div>
-          </article>
-    
-          <article class="intervalCardReveal efront">
-            <h3 class="project-heading">Spoiler Detection and Scaling System</h3>
-            <div class="project-description">
-              <p>
-                Spoiler Rating AI is a groundbreaking project that leverages state-of-the-art AI, Machine Learning, and
-                web scraping technologies to provide comprehensive spoiler ratings, meticulously graded on a scale from
-                1 to 10, for a wide array of TV shows and movies offered by various streaming services. Our mission is
-                to empower viewers with the essential information they need to make informed choices about their
-                entertainment selections. Beyond just spoiler ratings, our platform offers personalized recommendations
-                finely tuned to individual preferences, making every viewing experience uniquely enjoyable. Throughout
-                our journey, we've tackled complex challenges, including data collection and fine-tuning spoiler scale
-                accuracy, to deliver a seamless and reliable user experience. Spoiler Rating AI stands as the ultimate
-                destination for those seeking to enrich their entertainment encounters and stay ahead of those
-                game-changing plot twists, ensuring a world where spoilers are a thing of the past.
-              </p>
-              <a href="https://github.com/ayushjain01/Mini-Project" rel="noopener" target="_blank" id="efront">View
-                project</a>
-            </div>
-          </article>
-    
-          <article class="intervalCardReveal dola">
-            <h3 class="project-heading">GPS-tracking-system-Raspberry-Pi-Zero-W</h3>
-            <div class="project-description">
-              <p>
-                I developed an IoT project dedicated to real-time GPS tracking with a Raspberry Pi Zero W. The project's
-                core mission was to enable precise location tracking for logistics, personal safety, and diverse
-                applications. Leveraging the Raspberry Pi Zero W and GPS technology, this initiative provided a
-                versatile platform for accurate location monitoring. It empowered users to create customized tracking
-                solutions while prioritizing data privacy. This project exemplified a forward-thinking approach,
-                allowing individuals and developers to harness GPS tracking's potential, adapt it to their unique
-                requirements, and drive innovation in the field.
-              </p>
-              <a href="https://github.com/ayushjain01/Mini-Project" rel="noopener" target="_blank" id="efront">View
-                project</a>
-            </div>
-          </article>
-    
-          <article class="intervalCardReveal bidirectional">
-            <h3 class="project-heading">Bi-Directional Translation with Emotion</h3>
-            <div class="project-description">
-              <p>
-                This project aimed to redefine multilingual communication by creating a system capable of maintaining both semantic and emotional accuracy during translation. It addresses the challenges of emotional misrepresentation in conventional translation models, ensuring culturally sensitive and emotionally nuanced outputs. At the core of the project is EmojiRoBERTa, a custom emotion-detection model developed specifically for this purpose. The system also integrates GPT-3.5 to process complex linguistic structures, enabling iterative translations that preserve intent and emotional tone. Cosine similarity checks were implemented to validate the consistency of emotional and semantic content across translations. The system achieved a BLEU score of 65.67% and a Macro F1 score of 69.30% for emotion detection, showcasing its effectiveness in bridging language and emotional gaps.
-              </p>
-              <a href="https://github.com/adeebkm/Major-Project" rel="noopener" target="_blank">View project</a>
-            </div>
-          </article>
-          
-          
-          <article class="intervalCardReveal compass-careers">
-            <h3 class="project-heading">Compass Careers</h3>
-            <div class="project-description">
-              <p>
-                Compass Careers is a web application built to guide students through their professional journeys by offering a wide range of resources tailored to their needs. The platform combines tools for resume building, job matching, and networking, all designed to streamline the transition from academia to the workforce. Leveraging GPT-3.5, the application generates ATS-optimized resumes and personalized email templates for outreach to potential employers or mentors. With a robust tech stack that includes React.js for the frontend, Flask for the backend, and MongoDB for database management, Compass Careers ensures a smooth and intuitive user experience while addressing key challenges students face in career development.
-              </p>
-              <a href="https://github.com/adeebkm/Codeshastra_Syntax_Terrors" rel="noopener" target="_blank">View project</a>
-            </div>
-          </article>
-          
-          
-          
+        <h2 class="delaySmallReveal">Featured Projects <span>.</span></h2>
+        <p class="projects-intro">Explore my portfolio of innovative solutions across various domains. Each project represents a unique challenge tackled with creativity and technical expertise.</p>
+        <div class="project-categories">
+          <button class="category-btn active" data-category="all">All Projects</button>
+          <button class="category-btn" data-category="web">Web Development</button>
+          <button class="category-btn" data-category="ai">AI & ML</button>
+          <button class="category-btn" data-category="iot">IoT</button>
         </div>
-        <a href="https://github.com/adeebkm?tab=repositories" rel="noopener" target="_blank" class="delayExtraBigReveal">Repositories on Github</a>
+        <div id="projects">
+          <!-- Bubble Bop Project -->
+          <article class="intervalCardReveal teslabank project-card" data-category="web">
+            <div class="project-header">
+              <h3 class="project-heading">Bubble Bop</h3>
+              <span class="project-tag">Food Dine In Platform</span>
+            </div>
+            <div class="project-description">
+              <p>
+                A streamlined dining platform that revolutionizes restaurant experiences by enabling real-time table reservations, digital ordering, and seamless payments.
+              </p>
+              <ul class="project-features">
+                <li>Real-time table availability and reservations</li>
+                <li>Digital menu ordering system</li>
+                <li>Integrated payment processing</li>
+                <li>Personalized recommendations</li>
+              </ul>
+              <div class="project-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+                <span>Express</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/adeebkm/Bubble-Bop-Food-Dine-In" rel="noopener" target="_blank" class="project-link primary">View Project</a>
+              </div>
+            </div>
+          </article>
+    
+          <!-- DAIM Project -->
+          <article class="intervalCardReveal naped project-card" data-category="ai">
+            <div class="project-header">
+              <h3 class="project-heading">DAIM</h3>
+              <span class="project-tag">Decentralized AI Marketplace</span>
+            </div>
+            <div class="project-description">
+              <p>
+                An open ecosystem that democratizes AI by allowing independent developers to monetize innovations while preserving privacy and security.
+              </p>
+              <ul class="project-features">
+                <li>Decentralized platform connecting AI publishers and consumers</li>
+                <li>Value-increasing model for datasets and algorithms</li>
+                <li>Thread-based collaboration system</li>
+                <li>Privacy-preserving computation methods</li>
+              </ul>
+              <div class="project-tech">
+                <span>Blockchain</span>
+                <span>Smart Contracts</span>
+                <span>Python</span>
+                <span>TensorFlow</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/adeebkm/Decentralized-AI-and-Data-Marketplace" rel="noopener" target="_blank" class="project-link primary">View Project</a>
+              </div>
+            </div>
+          </article>
+    
+          <!-- Spoiler Detection Project -->
+          <article class="intervalCardReveal efront project-card" data-category="ai">
+            <div class="project-header">
+              <h3 class="project-heading">Spoiler Detection System</h3>
+              <span class="project-tag">AI-Powered Content Analysis</span>
+            </div>
+            <div class="project-description">
+              <p>
+                An AI solution that analyzes entertainment content to provide spoiler ratings on a scale of 1-10, helping viewers make informed choices.
+              </p>
+              <ul class="project-features">
+                <li>NLP algorithms for spoiler content classification</li>
+                <li>Personalized recommendation engine</li>
+                <li>Web scraping for real-time content analysis</li>
+                <li>User-friendly content discovery interface</li>
+              </ul>
+              <div class="project-tech">
+                <span>NLP</span>
+                <span>Machine Learning</span>
+                <span>Web Scraping</span>
+                <span>Python</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/ayushjain01/Mini-Project" rel="noopener" target="_blank" class="project-link primary">View Project</a>
+              </div>
+            </div>
+          </article>
+    
+          <!-- GPS Tracking Project -->
+          <article class="intervalCardReveal dola project-card" data-category="iot">
+            <div class="project-header">
+              <h3 class="project-heading">GPS Tracking System</h3>
+              <span class="project-tag">Raspberry Pi IoT Solution</span>
+            </div>
+            <div class="project-description">
+              <p>
+                A compact GPS tracking solution built on Raspberry Pi Zero W for real-time location monitoring with high precision and security.
+              </p>
+              <ul class="project-features">
+                <li>Low-power design for portable applications</li>
+                <li>Real-time location tracking</li>
+                <li>Secure data transmission</li>
+                <li>Customizable alerts and geofencing</li>
+              </ul>
+              <div class="project-tech">
+                <span>Raspberry Pi</span>
+                <span>Python</span>
+                <span>GPS</span>
+                <span>IoT</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/ayushjain01/Mini-Project" rel="noopener" target="_blank" class="project-link primary">View Project</a>
+              </div>
+            </div>
+          </article>
+    
+          <!-- Bi-Directional Translation Project -->
+          <article class="intervalCardReveal bidirectional project-card" data-category="ai">
+            <div class="project-header">
+              <h3 class="project-heading">Bi-Directional Translation</h3>
+              <span class="project-tag">Advanced NLP Research</span>
+            </div>
+            <div class="project-description">
+              <p>
+                An NLP system that preserves both semantic meaning and emotional context during language translation across different cultures.
+              </p>
+              <ul class="project-features">
+                <li>Custom EmojiRoBERTa model for emotion detection</li>
+                <li>GPT-3.5 integration for complex linguistics</li>
+                <li>Cosine similarity validation for consistency</li>
+                <li>Culturally sensitive translation capabilities</li>
+              </ul>
+              <div class="project-tech">
+                <span>NLP</span>
+                <span>RoBERTa</span>
+                <span>GPT-3.5</span>
+                <span>Python</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/adeebkm/Major-Project" rel="noopener" target="_blank" class="project-link primary">View Project</a>
+              </div>
+            </div>
+          </article>
+          
+          <!-- Compass Careers Project -->
+          <article class="intervalCardReveal compass-careers project-card" data-category="web ai">
+            <div class="project-header">
+              <h3 class="project-heading">Compass Careers</h3>
+              <span class="project-tag">AI-Powered Career Platform</span>
+            </div>
+            <div class="project-description">
+              <p>
+                An intelligent career platform that leverages generative AI to analyze resumes, provide personalized feedback, and guide students through their professional development journey.
+              </p>
+              <ul class="project-features">
+                <li>AI-powered resume analysis identifying strengths and improvement areas</li>
+                <li>Automated ATS compatibility scoring with specific recommendations</li>
+                <li>Smart job matching using AI to align skills with market opportunities</li>
+                <li>Personalized career roadmap generation based on goals and skills</li>
+              </ul>
+              <div class="project-tech">
+                <span>React.js</span>
+                <span>Flask</span>
+                <span>MongoDB</span>
+                <span>GPT-3.5</span>
+                <span>NLP</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/adeebkm/Codeshastra_Syntax_Terrors" rel="noopener" target="_blank" class="project-link primary">View Project</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <a href="https://github.com/adeebkm?tab=repositories" rel="noopener" target="_blank" class="github-link delayExtraBigReveal">Explore All Projects on GitHub <span class="arrow-icon">→</span></a>
       </div>
     </section>
     
@@ -324,7 +416,82 @@
             <article class="typescript intervalCardReveal">
               <img src="assets/icons/typescript.svg" width="60px" height="60px" alt="icon of typescript" />
             </article>
-           
+            <article class="aws intervalCardReveal">
+              <img src="assets/icons/aws.svg" width="60px" height="60px" alt="icon of AWS" />
+            </article>
+            <article class="office intervalCardReveal">
+              <img src="assets/icons/office.svg" width="60px" height="60px" alt="icon of Microsoft Office" />
+            </article>
+            <article class="django intervalCardReveal">
+              <img src="assets/icons/django.svg" width="60px" height="60px" alt="icon of Django" />
+            </article>
+            <article class="sql intervalCardReveal">
+              <img src="assets/icons/sql.svg" width="60px" height="60px" alt="icon of SQL" />
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Terminal Simulator Section -->
+    <section id="s-terminal">
+      <div class="grid-layout">
+        <h2 class="delaySmallReveal">Terminal <span>.</span></h2>
+        <p class="terminal-intro">Try my interactive terminal to explore more about me. Type 'help' to see available commands.</p>
+        
+        <div id="terminal-container">
+          <div id="terminal-header">
+            <div class="terminal-button terminal-close"></div>
+            <div class="terminal-button terminal-minimize"></div>
+            <div class="terminal-button terminal-expand"></div>
+            <div id="terminal-title">adeeb@portfolio:~$</div>
+          </div>
+          <div id="terminal-body">
+            <div id="terminal-output">
+              <p>Welcome to Adeeb's Portfolio Terminal! Type 'help' to see available commands.</p>
+              <p>Last login: <span id="terminal-date"></span></p>
+            </div>
+            <div id="terminal-input-line">
+              <span class="terminal-prompt">adeeb@portfolio:~$</span>
+              <input type="text" id="terminal-input" autofocus />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skill Tree Visualization Section -->
+    <section id="s-skill-tree">
+      <div class="grid-layout">
+        <h2 class="delaySmallReveal">Skill Tree <span>.</span></h2>
+        <p class="skill-tree-intro">Explore how my skills connect and relate to each other in this interactive visualization.</p>
+        
+        <div id="skill-tree-container">
+          <div id="skill-tree-legend">
+            <div class="legend-item">
+              <span class="legend-color frontend"></span>
+              <span class="legend-label">Frontend</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-color backend"></span>
+              <span class="legend-label">Backend</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-color data"></span>
+              <span class="legend-label">Data</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-color tools"></span>
+              <span class="legend-label">Tools</span>
+            </div>
+          </div>
+          <div id="skill-tree-visualization">
+            <!-- This will be populated by D3.js -->
+          </div>
+          <div id="skill-detail-panel">
+            <h3 id="skill-detail-title">Select a skill</h3>
+            <p id="skill-detail-description">Click on any skill node to see details about it and how it connects to other skills.</p>
+            <div id="skill-detail-connections"></div>
           </div>
         </div>
       </div>
@@ -401,18 +568,290 @@
 
   <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
   <script type="module" src="assets/js/main.js"></script>
+  <script src="assets/js/terminal.js"></script>
+  <script src="assets/js/skillTree.js"></script>
+  
+  <!-- Scroll to top button -->
+  <button id="scroll-to-top" aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+  </button>
+
+  <!-- Guaranteed skill hover functionality implementation -->
   <script>
-    // JavaScript to toggle project descriptions
-    const projectHeadings = document.querySelectorAll(".project-heading");
-
-    projectHeadings.forEach((heading) => {
-      const description = heading.nextElementSibling;
-      description.style.display = "none"; // Start with descriptions collapsed
-
-      heading.addEventListener("click", () => {
-        description.style.display = description.style.display === "none" ? "block" : "none";
+    // This is a self-executing function that will run as soon as the script is loaded
+    (function() {
+      console.log("SkillHover: Starting initialization");
+      
+      // Define skill descriptions once
+      const skillDescriptions = {
+        'html': "HTML is a markup language, where we mark elements to define what information the page will display.",
+        'css': "CSS is a style sheet language made up of 'layers', created for the purpose of styling pages.",
+        'js': "JavaScript is a programming language that allows you to implement dynamic elements on web pages.",
+        'sass': "Sass is a CSS preprocessor that adds some features that aren't available natively.",
+        'react': "React is a JavaScript library focused on creating componentized user interfaces.",
+        'next': "Next.js is a web framework that enables functionality like server-side rendering and static website generation for React-based web sites.",
+        'styled': "styled-components is a library that uses the concept of CSS-in-JS, that is, it allows us to write CSS codes inside Javascript.",
+        'tailwind': "Tailwind CSS is a CSS framework that provides us with utility classes for the purpose of styling pages.",
+        'typescript': "TypeScript is a superset of JavaScript that includes features that are not natively present in the language, in addition to making it static.",
+        'radix': "Radix is a library that provides accessible, unstyled components for building React applications.",
+        'aws': "Amazon Web Services (AWS) is a comprehensive cloud platform offering over 200 services for computing, storage, databases, networking, analytics, machine learning, and more, enabling businesses to scale and grow.",
+        'office': "Microsoft Office is a suite of productivity software including Word, Excel, PowerPoint, and other applications that provide essential tools for document creation, data analysis, and professional presentations.",
+        'django': "Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design with a model-template-view architectural pattern. It provides a secure, scalable way to build web applications quickly.",
+        'sql': "SQL (Structured Query Language) is a powerful domain-specific language for managing and querying relational database systems. It enables efficient data manipulation, retrieval, and management through standardized commands for creating schemas, inserting data, and performing complex queries across multiple tables."
+      };
+      
+      // Function to initialize the hover functionality
+      function initializeSkillHover() {
+        console.log("SkillHover: Attempting to initialize");
+        
+        // Get the description element
+        const changeDescription = document.querySelector('.changeDescription');
+        if (!changeDescription) {
+          console.error("SkillHover: Element with class 'changeDescription' not found - will retry");
+          return false;
+        }
+        
+        // Make sure it's visible
+        changeDescription.style.display = 'block';
+        changeDescription.style.opacity = '1';
+        changeDescription.innerHTML = '*hover mouse cursor over card to read*';
+        
+        // Get all skill cards
+        const skillsContainer = document.querySelector('#skills-cards');
+        if (!skillsContainer) {
+          console.error("SkillHover: Skills container not found - will retry");
+          return false;
+        }
+        
+        const skillCards = skillsContainer.querySelectorAll('article');
+        console.log(`SkillHover: Found ${skillCards.length} skill cards`);
+        
+        if (skillCards.length === 0) {
+          console.error("SkillHover: No skill cards found - will retry");
+          return false;
+        }
+        
+        // Add hover events to each skill card
+        skillCards.forEach(card => {
+          // Extract skill name from class list
+          const skillName = Array.from(card.classList)
+            .find(className => skillDescriptions[className]);
+          
+          if (skillName && skillDescriptions[skillName]) {
+            // To prevent duplicate listeners, remove any existing ones
+            card.removeEventListener('mouseover', card._hoverHandler);
+            card.removeEventListener('mouseout', card._outHandler);
+            
+            // Define new handlers and store references
+            card._hoverHandler = function() {
+              console.log(`SkillHover: Showing description for ${skillName}`);
+              changeDescription.innerHTML = skillDescriptions[skillName];
+              changeDescription.style.opacity = '1';
+            };
+            
+            card._outHandler = function() {
+              changeDescription.innerHTML = '*hover mouse cursor over card to read*';
+            };
+            
+            // Add event listeners
+            card.addEventListener('mouseover', card._hoverHandler);
+            card.addEventListener('mouseout', card._outHandler);
+            
+            // Make sure cursor shows this is interactive
+            card.style.cursor = 'pointer';
+            
+            console.log(`SkillHover: Added hover for ${skillName}`);
+          } else {
+            console.warn(`SkillHover: Could not find description for card with classes: ${card.className}`);
+          }
+        });
+        
+        console.log("SkillHover: Initialization complete!");
+        return true;
+      }
+      
+      // Try to initialize now if document is already ready
+      if (document.readyState === 'complete' || document.readyState === 'interactive') {
+        setTimeout(function() {
+          if (!initializeSkillHover()) {
+            console.log("SkillHover: Initial attempt failed, scheduling retry...");
+          }
+        }, 0);
+      }
+      
+      // Also try when DOM is fully loaded
+      document.addEventListener('DOMContentLoaded', function() {
+        console.log("SkillHover: DOMContentLoaded fired");
+        
+        // Try immediately
+        if (!initializeSkillHover()) {
+          console.log("SkillHover: DOMContentLoaded attempt failed, scheduling retries...");
+          
+          // And retry a few times to be sure
+          let attempts = 0;
+          const retryInterval = setInterval(function() {
+            attempts++;
+            console.log(`SkillHover: Retry attempt ${attempts}`);
+            
+            if (initializeSkillHover() || attempts >= 5) {
+              clearInterval(retryInterval);
+              console.log(`SkillHover: Retries complete. Success: ${attempts < 5}`);
+            }
+          }, 500);
+        }
       });
-    });
+      
+      // Final backup - try again when window is fully loaded
+      window.addEventListener('load', function() {
+        console.log("SkillHover: Window load event fired");
+        
+        // Try one more time
+        if (!initializeSkillHover()) {
+          console.log("SkillHover: Window load attempt failed, scheduling final retry...");
+          
+          // Final retry after a longer delay
+          setTimeout(function() {
+            initializeSkillHover();
+            console.log("SkillHover: Final initialization attempt completed");
+          }, 1000);
+        }
+      });
+    })();
+  </script>
+  
+  <!-- Direct experience tab switching implementation -->
+  <script>
+    // Self-executing function to handle experience tab switching
+    (function() {
+      console.log("ExperienceTabs: Starting initialization");
+      
+      // Experience content data
+      const experiences = {
+        'digitalhouse': {
+          description: `As the Resource Operations Head at Under 25, I led a 30-member team in managing both technological and physical resources effectively. My role involved utilizing predictive analytics for accurate resource forecasting and conducting regression analysis to assess demand. This position enhanced my leadership skills and deepened my understanding of operational research in strategic resource management.`,
+          title: "Resource Operational Leader",
+          company: "Under-25",
+          date: "Dec 2022 - Mar 2023"
+        },
+        'zuplae': {
+          description: `As a GDSC core member, I contributed to a Google Developers program for university students. The program focused on teaching mobile and web development skills, design thinking, and leadership. By leveraging GDSC, we aimed to enhance students' employability through valuable development training.`,
+          title: "GDSC-Core Member",
+          company: "Google Developer Student Club Ramaiah Institute of Technology",
+          date: "Apr 2023 - May 2024"
+        },
+        'codigofontetv': {
+          description: `Led ClutchRIT Esports, gaining valuable experience in the esports industry. Organized and hosted events, managed social media accounts, and promoted the organization's brand. Coordinated with team members, volunteers, external partners, and sponsors. Developed skills in leadership, communication, event planning, and marketing.`,
+          title: "Lead",
+          company: "ClutchRIT Esports",
+          date: "Mar 2022 - May 2024"
+        },
+        'contweb': {
+          description: `Contributed to the advancement of unmanned aerial vehicle technologies and airspace algorithms, focusing on optimizing urban air mobility. Integrated advanced pathfinding algorithms within air traffic management systems to mitigate collision risks, utilizing data on weather, terrain, and population density. Developed a Django and Docker-based web application to demonstrate 4D pathfinding for urban air mobility.`,
+          title: "Research Intern",
+          company: "Indian Institute of Science",
+          date: "Oct 2023 - Jun 2024"
+        },
+        'journyzz': {
+          description: `As a Full-stack Intern at Journyz, I enhanced the digital platform's operational efficiency by designing and developing key mobile application features using React Native. My role involved troubleshooting, improving app functionalities, and iteratively refining the user experience based on feedback. Additionally, I utilized Figma to create detailed wireframes, further supporting the app's development process.`,
+          title: "Application Developer",
+          company: "Journyz",
+          date: "Jan 2023 - Apr 2023"
+        }
+      };
+      
+      // Function to initialize the experience functionality
+      function initializeExperienceTabs() {
+        console.log("ExperienceTabs: Attempting to initialize");
+        
+        // Get experience elements
+        const experienceCompany = document.getElementById('experience-company');
+        const changeExperience = document.querySelector('.changeExperience');
+        const titleExperience = document.querySelector('.titleExperience');
+        const companyExperience = document.querySelector('.companyExperience');
+        const dateExperience = document.querySelector('.dateExperience');
+        
+        // Check if elements exist
+        if (!experienceCompany || !changeExperience || !titleExperience || 
+            !companyExperience || !dateExperience) {
+          console.error("ExperienceTabs: Required elements not found - will retry");
+          return false;
+        }
+        
+        // Get all company tabs
+        const companyTabs = experienceCompany.querySelectorAll('.company');
+        console.log(`ExperienceTabs: Found ${companyTabs.length} company tabs`);
+        
+        if (companyTabs.length === 0) {
+          console.error("ExperienceTabs: No company tabs found - will retry");
+          return false;
+        }
+        
+        // Add click event to each company tab
+        companyTabs.forEach(tab => {
+          // Get the class that matches our experience data
+          const experienceClass = Array.from(tab.classList)
+            .find(cls => experiences[cls]);
+          
+          if (experienceClass && experiences[experienceClass]) {
+            // Remove existing click handler to prevent duplicates
+            tab.removeEventListener('click', tab._clickHandler);
+            
+            // Create new click handler
+            tab._clickHandler = function() {
+              console.log(`ExperienceTabs: Clicked on ${experienceClass}`);
+              
+              // Update experience content
+              const exp = experiences[experienceClass];
+              changeExperience.innerHTML = exp.description;
+              titleExperience.innerHTML = exp.title;
+              companyExperience.innerHTML = exp.company;
+              dateExperience.innerHTML = exp.date;
+              
+              // Update active tab styling
+              companyTabs.forEach(t => t.classList.remove('activeExperience'));
+              tab.classList.add('activeExperience');
+            };
+            
+            // Add the click event listener
+            tab.addEventListener('click', tab._clickHandler);
+            tab.style.cursor = 'pointer';
+            
+            console.log(`ExperienceTabs: Added click handler for ${experienceClass}`);
+          } else {
+            console.warn(`ExperienceTabs: No data found for tab with classes: ${tab.className}`);
+          }
+        });
+        
+        console.log("ExperienceTabs: Initialization complete!");
+        return true;
+      }
+      
+      // Try to initialize with different timing approaches
+      if (document.readyState === 'complete' || document.readyState === 'interactive') {
+        setTimeout(initializeExperienceTabs, 0);
+      }
+      
+      document.addEventListener('DOMContentLoaded', function() {
+        console.log("ExperienceTabs: DOMContentLoaded fired");
+        
+        // Try immediately and with retries
+        if (!initializeExperienceTabs()) {
+          let attempts = 0;
+          const retryInterval = setInterval(function() {
+            attempts++;
+            if (initializeExperienceTabs() || attempts >= 5) {
+              clearInterval(retryInterval);
+            }
+          }, 500);
+        }
+      });
+      
+      window.addEventListener('load', function() {
+        setTimeout(initializeExperienceTabs, 500);
+      });
+    })();
   </script>
 </body>
 
